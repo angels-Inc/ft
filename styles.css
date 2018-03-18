@@ -1,0 +1,210 @@
+/* http://meyerweb.com/eric/tools/css/reset/
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+html, body {
+  height: 100%;
+  width: 100%;
+}
+
+body {
+
+  font-family: Open Sans,Arial,sans-serif;
+  font-weight: 300;
+  font-size: 5vw;
+}
+
+.container {
+  box-sizing: border-box;
+  padding: 15px;
+  max-width: 1200px;
+  margin: 0 auto;
+  position: relative;
+}
+
+.container .col {
+    box-sizing: border-box;
+    width: 100%;
+    padding: 15px;
+    float: none;
+}
+
+.header {
+  position: absolute;
+  width: 100%;
+}
+
+.description {
+  padding-top: 50px;
+  color: #fff;
+  align-items: center;
+  min-height: 70vh;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: url('./background.jpg') no-repeat bottom center;
+  background-size: cover;
+}
+.widget {
+  width: 100%;
+  min-height: 70vh;
+  display: block;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: url('./map.png') no-repeat center right;
+  background-size: cover;
+}
+
+h1 {
+  font-weight: 300;
+  line-height: 1em;
+  font-size: 2em;
+  margin-bottom: 5px;
+}
+
+p {
+  /*font-size: 2vw;*/
+}
+
+.logo {
+  display: block;
+  margin: 0 auto;
+  height: 45px;
+  width: auto;
+}
+
+.card {
+    display: inline-block;
+    background: rgba(255, 255, 255, 0.9);
+    border-radius: 4px;
+    font-size: .7em;
+    position: relative;
+    overflow: hidden;
+    -webkit-transition: all .3s;
+    transition: all .3s;
+    padding: 15px;
+    box-sizing: border-box;
+}
+
+a {
+  text-decoration: none;
+  color: #0e77ca;
+}
+
+button {
+    display: block;
+    margin: 0 auto;
+    font-weight: 500;
+    text-align: center;
+    -ms-touch-action: manipulation;
+    touch-action: manipulation;
+    cursor: pointer;
+    background-image: none;
+    border: 1px solid transparent;
+    white-space: nowrap;
+    line-height: 1.5;
+    font-size: inherit;
+    padding: 4px 15px;
+    border-radius: 4px;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    -webkit-transition: all .3s cubic-bezier(.645,.045,.355,1);
+    transition: all .3s cubic-bezier(.645,.045,.355,1);
+    position: relative;
+    color: #fff;
+    background-color: #0e77ca;
+    border-color: #0e77ca;
+    margin-top: 10px;
+}
+
+.card > div {
+  margin-bottom: 10px;
+}
+@media (min-width: 576px) {
+  body{
+    font-size: 3vw;
+  }
+  .card {
+    max-width: 600px;
+  }
+  .logo {
+    margin: initial;
+    height: 75px;
+  }
+}
+
+@media (min-width: 768px) {
+  body{
+    /*font-size: 5vw;*/
+ }
+}
+
+@media (min-width: 992px) {
+  body{
+    font-size: 3vw;
+  }
+  .container .col {
+    width: 50%;
+    float: left;
+  }
+  .container {
+  display: flex;
+  align-items: center;
+  }
+ }
+
+
+ @media (min-width: 1200px) {
+body{
+    font-size: 2vw;
+  }
+ }
