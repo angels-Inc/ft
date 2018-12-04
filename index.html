@@ -1,5 +1,7 @@
-<script type=text/javascript>var browserLanguage = navigator.language || navigator.userLanguage;
+<script type=text/javascript>
+  var browserLanguage = navigator.language || navigator.userLanguage;
 
-  var redirect = (browserLanguage === 'en-US') ? 'en/' : 'ja/';
+  var redirect = (browserLanguage === 'en-US') ? '/en/' : '/ja/';
 
-  window.location.href = window.location.href + redirect;</script>
+  window.top.location.href = redirect;
+</script>
